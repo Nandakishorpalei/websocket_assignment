@@ -1,0 +1,91 @@
+.cardContainer {
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.disabled__button {
+  border: 1px solid rgb(230, 230, 230);
+  color: grey;
+  text-transform: capitalize;
+  width: 48%;
+  display: flex;
+  text-align: left;
+}
+.cancel__button{
+  border: 1px solid rgb(230, 230, 230);
+  color: grey;
+  width: 48%;
+  display: flex;
+  justify-content: left;
+}
+.flexBox {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 20px;
+  border-top: 1px solid grey;
+}
+.formBox {
+  width: 90%;
+  margin: auto;
+}
+.label {
+  font-size: 12px;
+  margin-top: 26px;
+}
+.redSpan {
+  color: red;
+}
+
+.inputBox {
+  border: 0;
+  box-sizing: content-box;
+  background-color: #f4f4f4;
+  height: 1.4375em;
+  margin: 0;
+  width: 95%;
+  animation-duration: 10ms;
+  padding: 16px 12px 8px 12px;
+}
+.inputBox--2 {
+  width: 70%;
+  margin-bottom: 26px;
+}
+.inputFlexBox {
+  display: flex;
+  justify-content: space-between;
+}
+.teamtask__heading {
+  margin-left: 20px;
+}
+#teamtask__container {
+  max-height: 270px;
+  overflow-y: scroll;
+}
+#teamtask__container::-webkit-scrollbar {
+  display: none;
+}
+.teamtask__item__container {
+  border-top: 1px solid lightgray;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.teamtask__taskname {
+  line-height: 18px;
+}
+.teamtask__projectname{
+  font-size: small;
+}
+
+.taskUpdate{
+  display: flex;
+  height: 20px;
+  align-self: center;
+}
+.editIcon{
+  margin: 0 10px 0 0 ;
+}
