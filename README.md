@@ -15,7 +15,7 @@
 
 ---
 ### Tech Stack Used 🔧
-- `REACT.js`
+- `React.js`
 - `CSS`
 - `Redux`
 - `Node.js`
