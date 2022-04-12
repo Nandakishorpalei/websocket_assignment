@@ -15,19 +15,21 @@ const Form = ({setDisableBtn, itemId, page}) => {
   
   const [initialData, setInitialData] = useState({})
   const [data, setData] = useState(initialData);
-  const {willShow, updateWillShow} = useContext(ShowContext)
   const { taskName, projectName, isBillable } = data;
+
+  const { updateCurrentUser} = useContext(ShowContext);
 
   useEffect(()=>{
     if(page === "edit"){
       axios.get(`https://rocketassignment.herokuapp.com/task/${itemId}`)
      .then((res)=> res.data)
      .then((response)=>{
-         setData(response)
-      console.log("response",response)
+        setData(response)
+        console.log("response",response)
      })
      .catch(e=> console.log(e.message))
-     }
+     } 
+
   },[]);
         
        
@@ -47,6 +49,8 @@ const Form = ({setDisableBtn, itemId, page}) => {
             }else{
             setDisableBtn(true)
             }
+
+            updateCurrentUser(data)
           },[data])
 
 
