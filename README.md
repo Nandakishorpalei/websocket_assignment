@@ -1,4 +1,4 @@
-# Task management
+# Task Management
 ---
 
 # Welcome 👋
@@ -16,6 +16,7 @@
 ---
 ### Tech Stack Used 🔧
 - `React.js`
+- `Pusher`
 - `CSS`
 - `Redux`
 - `Node.js`
