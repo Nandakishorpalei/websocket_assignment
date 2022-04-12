@@ -23,6 +23,7 @@ router.post("/", async(req, res)=>{
             projectName:newTask.projectName, 
             isBillable : newTask.isBillable,
             userId: newTask.userId,
+            _id:newTask._id
           });
 
         return res.status(200).send("task added")
